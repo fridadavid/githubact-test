@@ -1,8 +1,5 @@
 {
     "family": "mydef",
-    "requiresCompatibilities": [
-        "FARGATE"
-      ],
     "containerDefinitions": [
         {
             "name": "davapp",

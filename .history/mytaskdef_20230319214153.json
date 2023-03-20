@@ -1,8 +1,5 @@
 {
     "family": "mydef",
-    "requiresCompatibilities": [
-        "FARGATE"
-      ],
     "containerDefinitions": [
         {
             "name": "davapp",
@@ -15,6 +12,7 @@
                     "hostPort": 8080
                 }
             ],
+            
             
             "logConfiguration": {
                 "logDriver": "awslogs",
