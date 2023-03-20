@@ -1,0 +1,27 @@
+{
+    "family": "mydef",
+    "containerDefinitions": [
+        {
+            "name": "davapp",
+            "image": "451445594773.dkr.ecr.us-east-1.amazonaws.com/davecr-repo",
+            "memory": 512,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080
+                }
+            ],
+            
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "dav-log-group",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "my-dav-container"
+                }
+            }
+        }
+    ],
+    "networkMode": "bridge"
+}
