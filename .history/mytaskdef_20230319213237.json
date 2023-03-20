@@ -12,9 +12,7 @@
                     "hostPort": 8080
                 }
             ],
-            "requiresCompatibilities": [
-                "FARGATE"
-              ],
+            
             
             "logConfiguration": {
                 "logDriver": "awslogs",

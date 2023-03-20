@@ -14,7 +14,7 @@
             ],
             "requiresCompatibilities": [
                 "FARGATE"
-              ],
+              ]
             
             "logConfiguration": {
                 "logDriver": "awslogs",

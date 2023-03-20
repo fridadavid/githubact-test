@@ -5,6 +5,9 @@
             "name": "davapp",
             "image": "451445594773.dkr.ecr.us-east-1.amazonaws.com/davecr-repo",
             "memory": 512,
+            "requiresCompatibilities": [
+                "FARGATE"
+              ]
             "essential": true,
             "portMappings": [
                 {
@@ -12,9 +15,6 @@
                     "hostPort": 8080
                 }
             ],
-            "requiresCompatibilities": [
-                "FARGATE"
-              ],
             
             "logConfiguration": {
                 "logDriver": "awslogs",
