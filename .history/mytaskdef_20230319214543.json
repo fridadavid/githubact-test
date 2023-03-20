@@ -1,9 +1,9 @@
 {
     "family": "mydef",
+    "networkMode": "awsvpc",
     "requiresCompatibilities": [
         "FARGATE"
       ],
-      "networkMode": "awsvpc",
     "containerDefinitions": [
         {
             "name": "davapp",
